@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf=8">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <title>Code</title>
+    <style>
+        div.bg {
+            background-color: #563d7c;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border: 2px solid #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-10 bg">
+                <mark><code>&lt;section&gt;</code></mark>
+                <!--<code>: Marca o texto como um código inline para referência, deixa o texto pink-->
+            </div>
+            <div class="col-10 bg">
+                <!--A tag pre lê todos os espaços e quebras de linha-->
+                <pre><mark><code>&lt;p&gt;Texto simples...&lt;/p&gt;
+&lt;p&gt;E outra linha com texto simples.&lt;/p&gt;</code></mark></pre>
+            </div>
+            <div class="col-10 bg">
+                <var>y</var> = <var>m</var><var>x</var> + <var>b</var> <!--Usado para marcar variáveis-->
+            </div>
+            <div class="col-10 bg">
+                Para mudar de diretório digite: <kbd>cd</kbd> seguido do nome do diretório <!--Usado para indicar ações-->
+            </div>
+            <div class="col-10 bg">
+                <samp>Este texto mostra a saída de um programa</samp> <!--Usado para mostrar saídas e exemplos de programas-->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Colapso</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <style>
+        .row {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    <a href="#ItemColapso1" class="btn btn-primary" data-toggle="collapse" aria-expanded="false"
+                        aria-controls="ItemColapso1">Disparador Href</a>
+                    <!--Data-toggle -> Define que o elemento será um ativador do colapse-->
+                    <button class="btn btn-primary" data-toggle="collapse" type="button" data-target="#ItemColapso2"
+                        aria-expanded="false" aria-controls="ItemColapso1">Disparador Button</button>
+                </p>
+                <div class="collapse" id="ItemColapso1">
+                    <div class="card card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsam optio facere consequatur,
+                        quo natus praesentium quia at, nihil quaerat laborum tempore, beatae voluptatem incidunt.
+                        Dolorem veritatis expedita dolore doloribus?
+                    </div>
+                </div>
+                <div class="collapse" id="ItemColapso2">
+                    <div class="card card-body">
+                        Ullam sed numquam dicta maxime dolores aut facilis eveniet omnis quaerat distinctio optio,
+                        recusandae mollitia earum tempora itaque adipisci veritatis deserunt magnam.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="accordion" role="tablist">
+                    <!--role serve para questões semânticas-->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="header1">
+                            <h5 class="mb-0">
+                                <a href="#colapso1" data-toggle="collapse" aria-expanded="true" aria-control="colapso1">
+                                    <!--data-toggle irá adicionar a funcionalidade ao botão-->
+                                    <!--Aria-expanded mostra ao leitor de tela qual colapso está a mostra-->
+                                    <!--Aria-control mostra ao leitor de tela qual id que o botão de colapso controla-->
+                                    Link para colapso #1
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="colapso1" class="collapse show" role="tabpanel" aria-labelledby="header1"
+                            data-parent="#accordion">
+                            <!--O data-parent recebe a id mãe que deve ser a mesma para todos os elementos-->
+                            <!--A id do elemento permite que decida qual o botão ou link que exercerá controle sobre ele-->
+                            <div class="card-body">
+                                <h5>Item Colapso #1</h5>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non distinctio cum maxime
+                                corporis optio aliquid ipsa animi. Delectus quo et non aliquid, rem exercitationem unde
+                                soluta provident illo tempora ut!
+                            </div>
+                        </div>
+                        <div class="card-header" role="tab" id="header2">
+                            <h5 class="mb-0">
+                                <a href="#colapso2" data-toggle="collapse" aria-expanded="false"
+                                    aria-control="colapso1">
+                                    Link para colapso #2
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="colapso2" class="collapse" role="tabpanel" aria-labelledby="header2"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <h5>Item Colapso #2</h5>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque incidunt sint vitae
+                                repellat minima pariatur similique, officiis nostrum molestiae dolor, architecto,
+                                voluptates animi porro at veritatis reprehenderit asperiores nulla tenetur!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

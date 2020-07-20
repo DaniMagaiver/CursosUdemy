@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*Posso utilizar a interpola├º├úo para utilizar valores do tipo String,
+isto ├® interessante para mostrar a vers├úo de um arquivo, por exemplo
+Vers├úo: 01-02-2012 */
+.minha-pagina {
+  background-color: #fafafa;
+  color: black; }
+.minha-pagina-span {
+  background-color: #c7d449;
+  width: 500px;
+  height: 200px;
+  border-radius: 0.2em; }
+.minha-pagina-span:hover {
+  background-color: red; }
+.minha-pagina-span a {
+  font-size: 12px;
+  font-weight: bold; }
+.minha-pagina-span p {
+  background-color: green; }
+
+.rede-social-instagram {
+  width: 30px;
+  height: 30px;
+  background-image: url("./rede-social/instagram"); }
+
+.rede-social-facebook {
+  width: 30px;
+  height: 30px;
+  background-image: url("./rede-social/facebook"); }
+
+.rede-social-linkedin {
+  width: 30px;
+  height: 30px;
+  background-image: url("./rede-social/linkedin"); }
+
+.quadradinho-i {
+  width: 0px; }
+
+.quadradinho-i {
+  width: 10px; }
+
+.quadradinho-i {
+  width: 20px; }
+
+.quadradinho-i {
+  width: 30px; }
+
+.circulo-1 {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px; }
+
+.circulo-2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px; }
+
+.circulo-3 {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px; }
+
+.circulo-4 {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px; }
+
+/*# sourceMappingURL=curso-sass.css.map */

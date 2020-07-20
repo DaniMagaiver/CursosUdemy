@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head lang="pt-br">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <title>Tipografia</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 h1">Esta é uma div utilizando uma classe h1</div>
+            <!--Podemos utilizar o estilo de um título em uma div-->
+            <div class="col-12 h2">Esta é uma div utilizando uma classe h2</div>
+            <div class="col-12 h3">Esta é uma div utilizando uma classe h3</div>
+            <div class="col-12 h4">Esta é uma div utilizando uma classe h4</div>
+            <div class="col-12 h5">Esta é uma div utilizando uma classe h5</div>
+            <div class="col-12 h6">Esta é uma div utilizando uma classe h6</div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3>
+                    Título de exibição normal
+                    <small class="text-muted">Com texto secundário desbotado</small>
+                    <!--Classes utilitárias podem criar um subtítulo-->
+                </h3>
+            </div>
+            <div class="col-12">
+                <h1 class="display-1">A classe display cria títulos maiores e extravagantes</h1>
+            </div>
+            <div class="col-12">
+                <!--A classe lead cria um parágrafo com destaque-->
+                <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est
+                    non commodo luctus.</p>
+            </div>
+            <div class="col-12">
+                <!--Você pode usar elementos comuns no html5-->
+                <p>Você pode usar a <mark>marca</mark> para realçar o texto.</p>
+                <p><del>Esta linha de texto deve ser tratada como texto excluído.</del></p>
+                <p><s>Esta linha de texto deve ser tratada como texto não utilizado.</s></p>
+                <p><ins>Esta linha de texto deve ser tratada como algo além do documento</ins></p>
+                <p><u>Esta linha de texto será renderizada como sublinhada</u></p>
+                <p><small>Esta linha de texto deve ser tratada como impressão fina.</small></p>
+                <p><strong>Esta linha foi processada como texto em negrito</strong></p>
+                <p><em>Esta lnha foi processada em um texto itálico.</em></p>
+                <!--Mark e small estão disponíveis para serem usadas como estilo de classe em outras tags para evitar problemas semânticos-->
+            </div>
+            <div class="col-12">
+                <!--Use o elemento abbr do HTML para usar abreviaturas e siglas, mostrando sua versão expandida quando o cursor estiver sobre elas.-->
+                <p><abbr title="Brasil">BR</abbr></p>
+                <!--A classe initialismo deixa a letra da abreviatura um pouco menor-->
+                <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+            </div>
+            <div class="col-12">
+                <!--A classe blockquote aplica o estilo de blockquote e a classe text-right alinha o texto do blockquote a direita-->
+                <blockquote class="blockquote text-right">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectur adipiscing elit. Integer posuere erat a ante.
+                    </p>
+                    <footer class="blockquote-footer">Alguém famoso no <cite title="Titulo do código">Título do
+                            código</cite></footer>
+                </blockquote>
+            </div>
+            <div class="col-12">
+                <ul class="list-unstyled"> <!--Retira o estilo da lista, mas funciona apenas nos filhos diretos-->
+                    <li>Lorem Ipsum dolor sit amet</li>
+                    <li>Consectur adipiscing elit</li>
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Nulla volutpat aliquam velit
+                        <ul>
+                            <li>Phasellus iaculis neque</li>
+                            <li>Purus sodales ultricies</li>
+                            <li>Vestibulum laroeet volutpat at</li>
+                        </ul>
+                    </li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                </ul>
+                <li class="list-inline"> <!--Cria uma lista com estilo inline-->
+                    <li class="list-inline-item">Phasellus iaculis</li>
+                    <li class="list-inline-item">Nulla volutpat</li>
+                </li>
+            </div>
+        </div>
+
+</body>

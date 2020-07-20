@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Breadcrumbs</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ol class="breadcrumb">
+                    <!--Breadcrumb define a tag mãe do breadcrumb, se irá ser uma lista ordenada ou uma nav-->
+                    <li class="breadcrumb-item">Home</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ol class="breadcrumb">
+                    <!--Breadcrumb-item define os items, a classe active define a página atual-->
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Biblioteca</a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#"> Biblioteca</a></li>
+                    <li class="breadcrumb-item active">Item</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!--Posso utilizar tanto uma lista ordenada quanto uma nav-->
+               <nav class="breadcrumb">
+                   <a class="breadcrumb-item" href="#">Home</a>
+                   <a class="breadcrumb-item" href="#">Biblioteca</a>
+                   <a class="breadcrumb-item" href="#">Item</a>
+                   <span class="breadcrumb-item active">Bootstrap</a>
+               </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

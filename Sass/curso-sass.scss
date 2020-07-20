@@ -1,0 +1,67 @@
+$cor-principal: rgb(199, 212, 73);
+$redes-sociais: "instagram", "facebook", "linkedin";
+$versao: "01-02-2012";
+
+/*Posso utilizar a interpolação para utilizar valores do tipo String,
+isto é interessante para mostrar a versão de um arquivo, por exemplo
+Versão: #{$versao} */
+
+.minha-pagina {
+  background-color: #fafafa;
+  color: black;
+
+  //O seletor & seleciona o pai do elemento, utilizando o - eu incorporo o nome do pai a nova regra que quero definir.
+  &-span {
+    background-color: $cor-principal;
+    width: 500px;
+    height: 200px;
+    border-radius: 0.2em;
+    //Posso utilizar a hierarquia no sass para selecionar os filhos.
+    &:hover {
+      background-color: red;
+    }
+    a {
+      //namespaced, permite que eu escreva propriedades sem ter que repetir palavras.
+      font: {
+        size: 12px;
+        weight: bold;
+      }
+    }
+    p {
+      //Uma variável pode ter seu valor modificado dentro do escopo no qual foi definido.
+      $cor-principal: green;
+      background-color: $cor-principal;
+    }
+  }
+}
+
+//Os controles de repetição permitem que eu economize espaço em código.
+//O each é muito eficiente para processar listas
+@each $item in $redes-sociais {
+  .rede-social-#{$item} {
+    width: 30px;
+    height: 30px;
+    background-image: url("./rede-social/#{$item}");
+  }
+}
+
+//O while permite que um bloco de código seja executado enquanto determinada condição não for atendida
+$i: 0;
+@while $i < 4{
+    .quadradinho-#{i}{
+        width: 10px * $i;
+    }
+    $i: $i + 1;
+}
+
+//O for é muito parecido com o while, mas ele incorpora a variável de controle
+@for $x from 1 through 4{
+    //O through ele representa o <= já o to representa o <
+    .circulo-#{$x}{
+        width: 5px * $x;
+        height: 5px * $x;
+        border-radius: 5px * $x;
+    }
+}
+
+//Variáveis criadas dentro de estruturas de controle ou repetição são locais e não existem fora das mesmas, para que possamos utilizar estas variáveis em outros lugares devemos definí-las como !global.

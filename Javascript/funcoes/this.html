@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span style="display:block;width: 200px; height: 200px; background-color: black;"></span>
+    <div style="display:block;width: 200px; height: 200px; background-color: red;"></div>
+</body>
+<script type="text/javascript">
+    /*O this varia de acordo com o tipo de função que utilizamos.
+Em uma função tradicional ele refere-se ao objeto que a invocou, já com arrow functions refere-se ao objeto onde ela foi criada.
+*/
+
+    //Use o navegador
+    function funcaoTradicional() {
+        if(this === window){console.log('Funcao Tradicional: O this é igual a window')}else{console.log('O this não é igual a window')};
+    }
+
+    funcaoTradicional();
+
+    document.querySelector('div').onclick = funcaoTradicional;
+
+    const arrowFunction = () => {if(this === window){console.log('ArrowFunction: O this é igual a window')}else{console.log('O this não é igual a window')}};
+
+    arrowFunction();
+
+    document.querySelector('span').onclick = arrowFunction;
+</script> 
+
+</html>

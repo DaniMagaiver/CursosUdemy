@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <title>Imagens</title>
+    <style>
+        div.bg{
+            background-color: blueviolet;
+            padding: 10px;
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10 bg">
+                <img src="img/bilu.jpg" class="img-fluid"> <!--Faz a imagem ficar responsiva-->
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 bg">
+                <img src="img/bilu.jpg" class="img-thumbnail"> <!--Cria uma thumbnail  (prévia de imagem)-->
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 bg">
+                <img src="img/bilu.jpg" class="img-fluid rounded"> <!--Aplica bordas arredondadas a uma imagem-->
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 bg">
+                <img src="img/bilu.jpg" class="img-fluid mx-auto d-block"> <!--mx-auto + d-block -> centraliza a imagem-->
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 bg">
+                <img src="img/bilu.jpg" class="img-fluid rounded"> <!--Aplica bordas arredondadas a uma imagem-->
+            </div>
+            <div class="col-10 bg">
+                <img src="img/bilu.jpg" class="col-6 img-fluid float-right"> 
+                <img src="img/bilu.jpg" class="col-6 img-fluid float-left"> <!--Aplica bordas arredondadas a uma imagem-->
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
