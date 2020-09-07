@@ -3,6 +3,15 @@ const path = require("path");
 
 const directoryPath = path.join(__dirname, "legendas");
 
+const composicao = (...fns) => 
+fns.reduce(async (acc, fn) => {
+  if(Promise.resolve(acc) === acc){
+    return fn(await acc)
+  } else {
+    return fn(acc)
+  }
+});
+
 const lerPasta = new Promise((resolve, reject) => {
   try {
     fs.readdir(directoryPath, { encoding: "utf-8" }, (err, files) => {
@@ -87,6 +96,7 @@ const WriteInJson = function (amountList) {
 
 module.exports = {
   lerPasta,
+  composicao,
   fileFilter,
   legendReader,
   ConvertAndBreakLines,

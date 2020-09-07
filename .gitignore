@@ -1,11 +1,10 @@
-<<<<<<< HEAD
+#Node folders
+./rxjs/rxjs-aulas/node_modules
 
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
 
 ### Node ###
-=======
->>>>>>> e6dbee74720a7c657263569e0da9b0ca55e87971
 # Logs
 logs
 *.log
@@ -92,11 +91,7 @@ dist
 
 # Gatsby files
 .cache/
-<<<<<<< HEAD
-# Comment in the public line in if your project uses Gatsby and not Next.js
-=======
 # Comment in the public line in if your project uses Gatsby and *not* Next.js
->>>>>>> e6dbee74720a7c657263569e0da9b0ca55e87971
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
@@ -114,7 +109,6 @@ dist
 
 # TernJS port file
 .tern-port
-<<<<<<< HEAD
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
@@ -125,5 +119,3 @@ dist
 ./angularbasico/crud/frontend/node_modules
 ./bootstrap/bootstrap-4.3.1-dist
 
-=======
->>>>>>> e6dbee74720a7c657263569e0da9b0ca55e87971
