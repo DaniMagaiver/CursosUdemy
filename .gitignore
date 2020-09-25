@@ -1,5 +1,10 @@
 #Node folders
 ./rxjs/rxjs-aulas/node_modules
+./angularbasico/crud/backend/node_modules
+./angularbasico/crud/frontend/node_modules
+./bootstrap/bootstrap-4.3.1-dist
+./jscangaceiro/server/node_modules
+
 
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
@@ -115,7 +120,4 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/node
 
-./angularbasico/crud/backend/node_modules
-./angularbasico/crud/frontend/node_modules
-./bootstrap/bootstrap-4.3.1-dist
 
