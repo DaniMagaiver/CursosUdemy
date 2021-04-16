@@ -8,7 +8,7 @@ class Usuario {
     this.id = usuario.id;
     this.nome = usuario.nome;
     this.email = usuario.email;
-    this.senha = usuario.senha;
+    this.senhaHash = usuario.senhaHash;
 
     this.valida();
   }
