@@ -1,0 +1,21 @@
+<div>
+  <po-modal #consulta p-title="Consultar XML da Carta de Correção">
+    <po-divider></po-divider>
+    <p>Carta de Correção</p>
+    <po-select p-placeholder="Selecione a Carta para consulta"></po-select>
+    <po-modal-footer>
+      <po-divider></po-divider>
+      <po-button p-label="Cancelar" (p-click)="consulta.close()"></po-button>
+      <po-button p-type="primary" p-label="Consultar" (p-click)="openFiscal()"></po-button>
+    </po-modal-footer>
+  </po-modal>
+  <po-modal #fiscal p-title="Consulta de Notas Fiscais">
+    <po-divider></po-divider>
+    <po-modal-footer>
+      <po-divider></po-divider>
+      <po-button p-label="Imprimir"></po-button>
+      <po-button p-type="primary" p-label="Emitir NFe"></po-button>
+    </po-modal-footer>
+  </po-modal>
+  <po-button-group [p-buttons]="buttons"></po-button-group>
+</div>

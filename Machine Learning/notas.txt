@@ -1,0 +1,14 @@
+- Machine Learning - 
+
+Áreas de AI:
+- Sistemas especialistas;
+- Visão computacional;
+- Machine learning;
+- Processamento de linguagem natura;
+- Algoritmos genéticos;
+- Sistemas multiagente;
+- Mineração de dados;
+- Resolução de problemas por meio de busca;
+- Lógica fuzzy (nebulosa);
+- Raciocínio baseado em casos;
+- Redes neurais;
